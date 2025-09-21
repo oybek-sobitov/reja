@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: center;
     background: #e5e5e5;
-}
+} 
 
 .frame .main_frame {
     position: relative;
@@ -16,7 +16,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background: #dee684;
+    background: #ddd;
 }
 
 .main_frame .left_frame {
@@ -36,7 +36,8 @@
     margin-right: 27px;
     display: flex;
     flex-direction: column;
-}
+    background-color: white;
+} 
 
 .main_frame .right_frame {
     position: relative;
@@ -48,6 +49,18 @@
     background-color: white;
 }
 
+.main_frame .left_frame .marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+    border: 1.5px solid #f0f0f6;
+}
+
+/* --- lelft_1 --- */
+
 .main_frame .left_frame .left_1 {
     width: 228px;
     height: 267px;
@@ -58,7 +71,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
 }
 
 .main_frame .left_frame .left_1 .left_1-1 {
@@ -123,9 +135,6 @@
     position: relative;
     width: 24.99px;
     height: 22.8px;
-   /*  border-radius: 50%;
-    filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
-    background: #ffb400; */
 }
 
 .icon-1 {
@@ -135,77 +144,48 @@
     margin-top: 5.86px;
 }
 
-.left_2-1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 221px;
-    margin-bottom: 10px;
-}
-
-
-.main_frame .left_frame .marginer {
-    position: relative;
-    width: 220px;
-    height: 0px;
-    margin-left: 40px;
-    margin-bottom: 25px;
-    margin-top: 39px;
-    border: 1.5px solid #f0f0f6;
-}
+/* --- lelft_2 --- */
 
 .main_frame .left_frame .left_2 {
     position: relative;
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
-    justify-content: space-between;
-    font-family: sans-serif;
     margin-left: 44px;
     width: 221px;
     height: 126px;
-    position: relative;
-    margin-left: 44px;
-}
-
-.left_2_left .left_2_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-
 }
 
 .left_2 .left_2_left p {
     margin: 7px;
     font-weight: 500;
+    font-size: 15px;
     color: #2B2B2B;
     background-color: #FFB400;
     padding: 2px 5px;
     width: fit-content;
 }
- 
+
 .left_2 .left_2_right p {
     margin: 7px;
     margin-right: 0;
-    align-items:flex-end;
-    font-weight: normal;
+    font-weight: 500;
+    font-size: 15px;
     color: #2B2B2B;
     padding: 2px 5px;
     width: fit-content;
 }
 
+/* --- lelft_3 --- */
+
 .main_frame .left_frame .left_3 {
     width: 220px;
     height: 153px;
     position: relative;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 45px;
-
 }
 
-.lang {
+.progres {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,7 +193,7 @@
     height: 24px;
 }
 
-.lang p {
+.progres p {
     font-family: sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -237,29 +217,36 @@
 }
 
 
+/* --- lelft_4 --- */
 
 .main_frame .left_frame .left_4 {
     width: 220px;
     height: 252px;
     position: relative;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 45px;
 }
+
+/* --- lelft_5 --- */
 
 .main_frame .left_frame .left_5 {
     width: 186px;
     height: 148px;
     position: relative;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 45px;
 }
 
 .ex_skills {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 4px;
     height: 24px;
+}
+
+.ex_skills img {
+    width: 20px;
+    height: 20px;
 }
 
 .ex_skills p {
@@ -267,4 +254,144 @@
     font-weight: 400;
     font-size: 15px;
     color: #767676;
+    padding-left: 15px;
+    padding-top: 18px;
+}
+
+/* --- left_6 ---*/ 
+
+.main_frame .left_frame .left_6 {
+    width: 220px;
+    height: 40px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 45px;
+    background-color: aqua;
+}
+
+/* --- mid_frame --- */
+
+/* --- mid_frame-1 --- */
+
+.mid_frame-1 {
+    width: 970px;
+    height: 467.09px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid_frame-1_right img {
+    width: 325px;
+    height: 467.09px;
+    margin-right: 50px;
+}
+
+.big_info {
+    width: 500px;
+    height: 118px;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: sans-serif;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    color: #2B2B2B;
+}
+
+.big_info_2 {
+    width: 193px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #2B2B2B;
+    margin-top: 80px;
+}
+
+.small_info {
+    width: 438px;
+    height: 68px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    color: #767676;
+    text-transform: capitalize;
+}
+
+.small_info_2 {
+    width: 424px;
+    height: 88px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #767676;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.mid_frame-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.mid_frame-3 {
+    width: 970px;
+    height: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ddd;
+
+}
+
+.box {
+    width: 310px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.box_icon img {
+    width: 68px;
+    height: 68px;
+    color: #FFB400;
+}
+
+.box_name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #2B2B2B;
+}
+
+.box_title {
+    font-weight: 400;
+    font-size: 15px;
+    color: #767676;
+}
+
+.box_title_new {
+    font-weight: 400;
+    font-size: 15px;
+    color: #767676;
+    text-align: center;
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.order_now {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFB400;
 }
