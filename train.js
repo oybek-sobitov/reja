@@ -101,4 +101,4 @@ function countLetter(harf, soz) {
   return count;
 }
 
-console.log(countLetter("r", "rear"));
+console.log(countLetter("r4", "rear"));
