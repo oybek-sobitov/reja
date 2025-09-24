@@ -38,8 +38,16 @@ app.set("view engine", "ejs");
 // Section - 4 (Routing)
 
 app.post("/create-item", (req, res) => {
-    console.log(req.body);
-    res.json({test: "success"});
+    console.log("User entered /create-item");
+    const new_reja = req.body.reja; 
+    db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
+        if(err) {
+            console.log(err);
+            res.end("Somthing went wrong"); 
+        } else {
+            res.end("Successfuly added");
+        }
+    });
 });
 
 app.get('/author', (req, res) => {
@@ -47,7 +55,16 @@ app.get('/author', (req, res) => {
 })
 
 app.get("/", function(req, res) {
-    res.render('reja');
+    console.log("User entered /")
+    db.collection("plans").find().toArray( (err, data) => {
+        if(err) {
+            console.log(err);
+            res.end("Somthing went wrong")
+        } else {
+            console.log(data);
+            res.render('reja', { items: data  });
+        }
+    });
 });
 
 
