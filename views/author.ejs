@@ -16,6 +16,7 @@
                 <div class="left_1">
                     <div class="left_1-1">
                         <img src="images/Profile.png" width="156px" height="142px" alt="" />
+                        <img class="online_icon" src="icon/Available.svg" alt="">
                     </div>
                     <div class="left_1-2">
                         <%=user.name%>  
@@ -58,17 +59,24 @@
                 </div>
                 <div class="marginer"></div>
                 <div class="left_2">
-                    <div class="left_2_left">
-                        <p>Age:</p>
-                        <p>Residence:</p>
-                        <p>Freelance:</p>
-                        <p>Adress:</p>
+                    <div>
+                        <strong>Age:</strong>
+                        <span><%=user.age%></span>
                     </div>
-                    <div class="left_2_right">
-                        <p><%=user.age%></p>
-                        <p><%=user.residence%></p>
-                        <p style="color: #7EB942;">Avaliable</p>
-                        <p>Seoul</p>
+
+                    <div>
+                        <strong>Residence:</strong>
+                        <span><%=user.residence%></span>
+                    </div>
+
+                    <div>
+                        <strong>Freelance:</strong>
+                        <span style="color: #7EB942;">Available</span>
+                    </div>
+
+                    <div>
+                        <strong>Address:</strong>
+                        <span><%=user.adress%></span>
                     </div>
                 </div>
                 <div class="marginer"></div>
@@ -147,7 +155,7 @@
                 </div>
                 <div class="marginer"></div>
                 <div class="left_5">
-                    <div><p style="font-family: sans-serif;    font-weight: 400;     font-size: 18px;">Extra Skills</p></div>
+                    <div><p style="font-family: sans-serif;    font-weight: 500;     font-size: 18px;">Extra Skills</p></div>
                         <div class="ex_skills">
                             <img src="icon/Icons.png" alt="">
                             <p> <%=user.extra_skills[0]%> </p>
@@ -170,14 +178,22 @@
                 </div>
                 <div class="marginer"></div>
                 <div class="left_6">
-                    <p>Button</p>
+                    <button class="left_6_button">DOWNLOAD CV <i class="fa-solid fa-download"></i></button>
                 </div>
             </div>
             <div class="mid_frame">
                 <div class="mid_frame-1">
                     <div class="mid_frame-1_left">
                         <p class="big_info">Doctor neurologists in OHSU Hospital </p>
+                        <img class="small_icon_1" src="icon/Ellipse 12.svg" alt="">
+                        <img class="small_icon_2" src="icon/Ellipse 12.svg" alt="">
+                        <img class="small_icon_3" src="icon/Ellipse 15.svg" alt="">
+                        <img class="small_icon_4" src="icon/Ellipse 15.svg" alt="">
+                        <img class="small_icon_5" src="icon/Rectangle 52.svg" alt="">
+                        <img class="small_icon_6" src="icon/Rectangle 51.svg" alt="">
+                        <img class="small_icon_7" src="icon/Polygon 1.svg" alt="">
                         <p class="small_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+                        <button class="mid_frame_button">HIRE ME <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="mid_frame-1_right">
                         <img src="images/Your_image.png" alt="">
@@ -256,13 +272,26 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. </p>
                         </div>
                         <div class="order_now">
-                            <a href="">ORDER NOW</a>
+                            <a style="color: #FFB400; text-decoration: none; font-size: 15px;" href="">ORDER NOW ></a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="right_frame"></div>
+            <div class="right_frame">
+                <div class="dark_button">
+                    <img src="menu_icon/Contrast.svg" alt="">
+                </div>
+                <div class="menu_buttons">
+                    <img class="menu_button" src="menu_icon/Pop up.svg" alt="">
+                    <img src="menu_icon/Home.svg" alt="">
+                    <img src="menu_icon/Service.svg" alt="">
+                    <img src="menu_icon/Cv.svg" alt="">
+                    <img src="menu_icon/Portfolio.svg" alt="">
+                    <img src="menu_icon/Blog.svg" alt="">
+                    <img src="menu_icon/Contact.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </body>
