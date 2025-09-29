@@ -33,3 +33,20 @@ function countDigits(mix_digit) {
 
 const result = countDigits("ad2a54y79wet0sfgb9");
 console.log(result);
+
+
+let list_x = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function test_midd (list_a) {
+    let summ = 0;
+    for (let a of list_a) {
+      if (a%2!==0) {
+        summ = summ + a;
+      } 
+    }
+    console.log(summ);
+
+    
+};
+
+test_midd(list_x);
