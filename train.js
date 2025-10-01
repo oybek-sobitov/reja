@@ -20,7 +20,7 @@ console.log(countLetter("r4", "rear")); */
 
 // TASK B
 
-function countDigits(mix_digit) {   
+/* function countDigits(mix_digit) {   
     let count = 0;
     for (let index in mix_digit) {
       if (mix_digit[index]>= "0" && mix_digit[index]<= "9") {
@@ -28,25 +28,60 @@ function countDigits(mix_digit) {
       }
     }
     return count;
-};
+}; */
 
+// TASK-C
 
-const result = countDigits("ad2a54y79wet0sfgb9");
-console.log(result);
+const moment = require("moment");
 
+class shop{ 
 
-let list_x = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  constructor(non, lagmon, cola){
+    this.non = non
+    this.lagmon = lagmon
+    this.cola = cola
+  }
 
-function test_midd (list_a) {
-    let summ = 0;
-    for (let a of list_a) {
-      if (a%2!==0) {
-        summ = summ + a;
-      } 
+  
+  sotish(item, number){
+    this.item = item;
+    this.number = number;
+
+    if(item === "non"){
+      this.non -= this.number;
+    } if(item === "lagmon") {
+      this.lagmon -= this.number;
+    } else if (item === "cola") {
+      this.cola -= this.number;
     }
-    console.log(summ);
 
-    
+      console.log("Hozir",moment().format("HH:mm"), `da ${this.number}'ta ${this.item} sotildi.`);
+    }
+  
+
+  qabul(item, number){
+    this.item = item;
+    this.number = number;
+
+    if(item === "non"){
+      this.non += this.number;
+    } if(item === "lagmon") {
+      this.lagmon += this.number;
+    } else if (item === "cola") {
+      this.cola += this.number;
+    }
+
+    console.log("Hozir",moment().format("HH:mm"), `da ${this.number}'ta ${this.item} qabul qilinid.`);
+  }
+
+  qoldiq(){
+      console.log("Hozir",moment().format("HH:mm"), `da ${this.non}'ta non ${this.lagmon}'ta lagmon ${this.cola}'ta cola mavjud.`);
+  }
+
 };
 
-test_midd(list_x);
+const sell = new shop(5,6,7);
+sell.sotish("non",1);
+sell.qoldiq();
+sell.qabul("cola",5);
+sell.qoldiq();
