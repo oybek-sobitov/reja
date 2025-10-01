@@ -32,7 +32,7 @@ console.log(countLetter("r4", "rear")); */
 
 // TASK-C
 
-const moment = require("moment");
+/* const moment = require("moment");
 
 class shop{ 
 
@@ -84,4 +84,25 @@ const sell = new shop(5,6,7);
 sell.sotish("non",1);
 sell.qoldiq();
 sell.qabul("cola",5);
-sell.qoldiq();
+sell.qoldiq(); */
+
+// TASK-D
+
+function equal_strings (first, second) {
+  if (first.length === second.length){
+    let count = 0
+      for(let value_first of first){
+          if (second.includes(value_first)) {
+            count += 1;
+          }
+      }
+      if (count === first.length) {
+        return true;
+      } else {
+        return false;
+      }
+  } else {
+    return false;
+  }
+};
+console.log(equal_strings("apple", "palep"));
