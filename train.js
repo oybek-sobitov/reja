@@ -1,34 +1,36 @@
-// TASK A
+// TASK-E 
 
-
-/* function countLetter(harf, soz) {
-  if (harf.length !== 1) {
-    return "Birinchi argumetga harf kiriting!";
+function getReverse(item){
+  empty_list = []
+  for (let letter of item) {
+    empty_list.unshift(letter);
   }
-
-  let count = 0;
-  for (let a of soz) {
-    if (a === harf) {
-      count++;
-    }
-  }
-
-  return count;
+  console.log(empty_list.join(""));
 }
 
-console.log(countLetter("r4", "rear")); */
+getReverse("hello");
 
-// TASK B
 
-/* function countDigits(mix_digit) {   
-    let count = 0;
-    for (let index in mix_digit) {
-      if (mix_digit[index]>= "0" && mix_digit[index]<= "9") {
-        count = count + 1;
+// TASK-D
+
+/* function equal_strings (first, second) {
+  if (first.length === second.length){
+    let count = 0
+      for(let value_first of first){
+          if (second.includes(value_first)) {
+            count += 1;
+          }
       }
-    }
-    return count;
-}; */
+      if (count === first.length) {
+        return true;
+      } else {
+        return false;
+      }
+  } else {
+    return false;
+  }
+};
+console.log(equal_strings("apple", "palep")); */
 
 // TASK-C
 
@@ -86,23 +88,34 @@ sell.qoldiq();
 sell.qabul("cola",5);
 sell.qoldiq(); */
 
-// TASK-D
+// TASK B
 
-function equal_strings (first, second) {
-  if (first.length === second.length){
-    let count = 0
-      for(let value_first of first){
-          if (second.includes(value_first)) {
-            count += 1;
-          }
+/* function countDigits(mix_digit) {   
+    let count = 0;
+    for (let index in mix_digit) {
+      if (mix_digit[index]>= "0" && mix_digit[index]<= "9") {
+        count = count + 1;
       }
-      if (count === first.length) {
-        return true;
-      } else {
-        return false;
-      }
-  } else {
-    return false;
+    }
+    return count;
+}; */
+
+// TASK A
+
+
+/* function countLetter(harf, soz) {
+  if (harf.length !== 1) {
+    return "Birinchi argumetga harf kiriting!";
   }
-};
-console.log(equal_strings("apple", "palep"));
+
+  let count = 0;
+  for (let a of soz) {
+    if (a === harf) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countLetter("r4", "rear")); */
